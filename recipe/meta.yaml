@@ -1,5 +1,5 @@
 {% set name = "ratingcurve" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ratingcurve-{{ version }}.tar.gz
-  sha256: 86c0aa19128425f52eb3ec0a6e47758dd99d9e5868b70264b628bfe679efa56d
+  sha256: d0f4a31e53a29df401a55943cefe6f6c9513040999fbccfcb5bb1f9b869ea83a
 
 build:
   noarch: python
