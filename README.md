@@ -1,11 +1,11 @@
-About ratingcurve
-=================
+About ratingcurve-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ratingcurve-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/ratingcurve/
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ratingcurve-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for fitting multi-segment stage-discharge rating curves.
 
