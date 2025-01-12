@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ratingcurve-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ratingcurve-{{ version }}.tar.gz
   sha256: bc81e27fb5ce7cb7c2f1eb01daf50034ea59e9d212d480c6d991997307a5f191
 
 build:
@@ -14,15 +14,15 @@ build:
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pymc >=5.0.0
     - patsy
 
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/ratingcurve/
